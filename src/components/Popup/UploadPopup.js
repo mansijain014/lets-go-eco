@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import CTA from "../Homepage/CTA";
+import NavBar1 from "../Homepage/NavBar1";
 
 const UploadPopup = ({ onClose, onCapture }) => {
 
@@ -23,9 +24,18 @@ const UploadPopup = ({ onClose, onCapture }) => {
 
   return (
     <>
+      <div>
+      <NavBar1 />
+      </div>
       <div className="popup">
+        <h1 style={{fontFamily: 'var(--sf-pro-bold-font-family)'}}>Disease Detection</h1>
+        <p style={{textAlign: 'center', fontFamily: 'var(--sf-pro-light-font-family)'}}>
+            Take a picture of your plant leaf and upload it here. 
+            The app will analyze the leaf and will report you if your plant leaf is diseased
+            along with some curing practices for the same.
+        </p>
         <FontAwesomeIcon icon="images" />
-        <CTA icon="folder-open" text="Browse" onClick={() => { browseRef.current.click() }} />
+        <CTA icon="folder-open" text="Add Photo" onClick={() => { browseRef.current.click() }} />
         {
           deviceType !== "desktop" ?
             <CTA icon="camera" text="Camera" onClick={() => { cameraRef.current.click() }} />

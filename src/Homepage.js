@@ -139,7 +139,7 @@ class Homepage extends Component {
     return (
       <>
         <Header onTryNowClick={this.tryNowClickHandler} />
-        <About id="about" />
+        <About id="about" onTryNowClick={this.tryNowClickHandler}/>
         <Newbie id="newbie" />
         <Footer />
 

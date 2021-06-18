@@ -115,21 +115,22 @@ nav {
 /* CTA */
 
 .cta {
-  width: 9rem;
+  width: 8rem;
   height: 3rem;
   display: flex;
   justify-content: center;
   align-self: center;
   align-items: center;
   cursor: pointer;
-  background: #b7eaaf;
+  background: #000;
   border-radius: 7px;
   text-align: center;
   font-family: var(--sf-pro-bold-font-family);
-  font-size: 1.3rem;
+  font-size: 1rem;
   letter-spacing: -1px;
   text-decoration: none;
-  color: #000;
+  color: #b7eaaf;
+  margin-bottom: 5px;
 }
 
 /* About  */
@@ -151,7 +152,7 @@ nav {
   font-family: var(--sf-pro-bold-font-family);
 }
 
-.step-container {
+.card-container {
   width: 70rem;
   padding-bottom: 5rem;
   display: flex;
@@ -165,23 +166,26 @@ nav {
   font-size: 3rem;
 }
 
-/* Step */
+/* card */
 
-.step {
-  width: 14rem;
+.card {
+  width: 20rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #DDFFBC;
+  background-color: #0d986a;
   /* align-content: center; */
-
+  border-radius: 20px;
   text-align: center;
+  margin-bottom: 4px;
+  padding: 4px;
+  cursor: pointer;
 }
 
 .icon {
-  padding: 1.5rem;
+  /* padding: 1.5rem; */
   color: #cdffef;
-  font-size: 8rem;
+  font-size: 2rem;
 }
 
 .arrow-icon {
@@ -189,7 +193,7 @@ nav {
   align-self: center;
 }
 
-.stepnum {
+.cardnum {
   padding: 0.3rem;
   width: 1.5rem;
   height: 1.5rem;
@@ -199,12 +203,16 @@ nav {
   font-size: 1.25rem;
 }
 
-.steptitle {
+.cardtitle {
   font-size: 1.7rem;
+  color: rgb(159, 230, 160);
 }
 
-.stepdes {
+.carddes {
   font-family: var(--sf-pro-light-font-family);
+  /* color:#000; */
+  padding-bottom: auto;
+  /* padding-top: 25px; */
 }
 
 /* Newbie */
@@ -280,10 +288,11 @@ nav {
   justify-content: space-evenly;
   align-items: center;
   position: absolute;
-  top: 50%;
-  bottom: 50%;
-  left: 50%;
-  right: 50%;
+  top: 25%;
+  bottom: 25%;
+  left: 25%;
+  right: 25%;
+  background-color:#b7eaaf;
 }
 
 .popup > * {
@@ -326,6 +335,9 @@ nav {
   flex-direction: column;
   align-items: center;
   margin-top: 3rem;
+  background-color: #a3f8ae;
+  border-radius: 20px;
+  margin-bottom: 20px;
 }
 
 .issue-counter {
@@ -336,7 +348,7 @@ nav {
 }
 
 .issue-counter-icon {
-  color: #ff9398;
+  color: #eb8f39;
   padding-right: 1rem;
   font-size: 3.5rem;
 }
@@ -346,7 +358,7 @@ nav {
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  width: 110%;
+  width: 80%;
   height: 8rem;
   padding: 2rem;
   margin-bottom: 3rem;
@@ -425,12 +437,12 @@ nav {
     font-size: 2.5rem;
   }
 
-  .step-container {
+  .card-container {
     width: auto;
     justify-content: space-around;
   }
 
-  .step {
+  .card {
     width: 90%;
   }
 
@@ -442,11 +454,11 @@ nav {
     display: none;
   }
 
-  .steptitle {
+  .cardtitle {
     width: 80%;
   }
 
-  .stepdes {
+  .carddes {
     margin-top: -5%;
     margin-bottom: 10%;
     width: 70%;
@@ -477,12 +489,12 @@ nav {
     font-size: 2rem;
   }
 
-  .step-container {
+  .card-container {
     width: auto;
     flex-direction: column;
   }
 
-  .step {
+  .card {
     width: auto;
   }
 
@@ -494,7 +506,7 @@ nav {
     display: none;
   }
 
-  .stepdes {
+  .carddes {
     margin-top: -5%;
     margin-bottom: 10%;
   }

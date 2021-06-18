@@ -17,7 +17,7 @@ const Issue = ({
       </div>
       <a className="cure-button" href={cureURL} target="_blank" rel="noreferrer">
         <FontAwesomeIcon icon="plus-square" className="cure-button-icon" />
-        <h4>CURE <br /> NOW</h4>
+        <h4> GET <br /> CURE</h4>
       </a>
     </div>
   );

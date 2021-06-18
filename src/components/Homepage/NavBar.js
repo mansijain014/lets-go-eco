@@ -3,12 +3,9 @@ import { Link } from "react-scroll";
 
 const NavBar = ({onTryNowClick}) => {
   return (
-    <div className="navbar">
+    <div className="navbar flex">
       <h3 className="logo"><img src="https://img.icons8.com/fluent-systems-filled/48/000000/plant-under-sun.png"/> Let's Go Eco!</h3>
       <nav>
-        {/* <Link to="instructions" smooth={true} duration={500} className="navbar-link">
-          How it works?
-        </Link> */}
         <Link to="about" smooth={true} duration={500}>
         <button className="navbar-link button" >About</button>
         </Link>

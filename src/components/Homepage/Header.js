@@ -1,6 +1,5 @@
 import React from "react";
 import NavBar from "./NavBar";
-import CTA from "./CTA";
 
 const Header = ({onTryNowClick}) => {
   return (
@@ -11,7 +10,6 @@ const Header = ({onTryNowClick}) => {
       </h1>
       <p className="header-p">-Alfred Austin</p>
       <img src="banner.png" style={{width:480, height:380, alignSelf: 'center'}}/>
-      {/* <CTA icon="cloud-upload-alt" text="Try Now" onClick={onTryNowClick}/> */}
     </div>
   );
 };

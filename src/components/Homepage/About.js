@@ -1,17 +1,34 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
-import Step from './Step'
-
-const About = () => {
+import Card from './Card'
+import { Link } from "react-scroll";
+const About = ({onTryNowClick}) => {
     return (
         <div className="about">
-            <h2 className="about-heading" style={{color:'black'}}>About</h2>
-            <div className="step-container">
-                <Step icon="mobile-alt" stepNum="1" stepTitle="Click a Pic" stepDes="Take a Picture of your plant leaf" />
-                <FontAwesomeIcon icon="chevron-right" className="icon arrow-icon"/>
-                <Step icon="cloud-upload-alt" stepNum="2" stepTitle="Upload on Plant AI" stepDes="Visit Plant AI on your device and click on Try Now to upload your picture" />
-                <FontAwesomeIcon icon="chevron-right" className="icon arrow-icon" />
-                <Step icon="list" stepNum="3" stepTitle="Get final Report" stepDes="Plant AI will analyze your plant and will display a detailed report for you" />
+            <h2 className="about-heading" style={{color:'#564A4A'}}>About</h2>
+            <div className="card-container">
+                <Card 
+                    cardTitle="Detect Leaf Disease" 
+                    cardDes="Take a picture of your plant leaf and upload it. 
+                             The app will analyze the leaf and will report you if your plant leaf is diseased
+                             along with some curing practices for the same." 
+                    onTryNowClick={onTryNowClick}      
+                />
+                <Card 
+                    cardTitle="Check Soil Quality" 
+                    cardDes="Take a picture of your soil and upload it. 
+                             The app will analyze the soil and will report you if your soil is fertile or not.
+                             ksbk cbsdbvkz kjsnfkjbzv snvkjb snvcckjznj jkdcbb dajc"
+                    onTryNowClick={onTryNowClick} 
+                />
+                <Link to="newbie" smooth={true} duration={500}>
+                <Card 
+                    cardTitle="Newbie Gardener" 
+                    cardDes="Plants are like people, but better hence they need to be cared better.
+                             So if you're a newbie to the world of gardening. This section is the 
+                             right place to kick-start your journey." 
+                    onTryNowClick={onclick}         
+                />
+                </Link>
             </div>
 
         </div>
